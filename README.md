@@ -42,6 +42,8 @@ I created an interactive Love Language Discovery tool that helps users identify 
 - Create PDF report generation
 - Add multilingual support
 
+**License**: [MIT License](LICENSE.html)
+
 **Key Improvements**:
 1. Modern CSS Architecture using CSS Variables
 2. Semantic HTML5 Structure with ARIA Landmarks
