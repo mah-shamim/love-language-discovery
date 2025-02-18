@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Language Discovery</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="app-container">
+    <section id="hero">
+        <h1 class="title">Discover Your Love Language</h1>
+        <p class="subtitle">Find your unique way of giving and receiving love ❤️</p>
+        <div id="language-cards">
+            <div class="card" data-language="words">Words of Affirmation</div>
+            <div class="card" data-language="acts">Acts of Service</div>
+            <div class="card" data-language="gifts">Receiving Gifts</div>
+            <div class="card" data-language="time">Quality Time</div>
+            <div class="card" data-language="touch">Physical Touch</div>
+        </div>
+    </section>
+    <!-- New Quiz Section -->
+    <section id="quiz-section">
+        <h2>What's Your Primary Love Language?</h2>
+        <div id="quiz-container">
+            <div id="question-display">Click Start to Begin</div>
+            <div id="options-container">
+                <button class="option" data-value="0">Option 1</button>
+                <button class="option" data-value="1">Option 2</button>
+                <button class="option" data-value="2">Option 3</button>
+            </div>
+            <button id="start-quiz">Start Quiz</button>
+        </div>
+    </section>
+
+    <!-- New Chart Section -->
+    <section id="results-section">
+        <h2>Love Language Distribution</h2>
+        <div id="chart-container">
+            <div class="bar-container" data-language="words">
+                <div class="bar"></div>
+                <label>Words</label>
+            </div>
+            <div class="bar-container" data-language="acts">
+                <div class="bar"></div>
+                <label>Acts</label>
+            </div>
+            <div class="bar-container" data-language="gifts">
+                <div class="bar"></div>
+                <label>Gifts</label>
+            </div>
+            <div class="bar-container" data-language="time">
+                <div class="bar"></div>
+                <label>Time</label>
+            </div>
+            <div class="bar-container" data-language="touch">
+                <div class="bar"></div>
+                <label>Touch</label>
+            </div>
+        </div>
+    </section>
+    <!-- New Stories Section -->
+    <section id="stories">
+        <h2>Love Language Stories</h2>
+        <div id="story-carousel">
+            <div class="story-card" data-category="words">
+                <h3>The Power of Words</h3>
+                <p class="preview">A story about the impact of kind words...</p>
+                <div class="full-story">When Sarah started leaving daily notes of appreciation for her partner, their relationship transformed. Simple phrases like "I admire your perseverance" created a new level of emotional connection.</div>
+                <span class="expand-btn">+</span>
+            </div>
+            <div class="story-card" data-category="acts">
+                <h3>Small Acts, Big Love</h3>
+                <p class="preview">When actions speak louder...</p>
+                <div class="full-story">Mark showed his love by taking over household chores when his wife was overwhelmed. These practical acts of service became their secret language of care and support.</div>
+                <span class="expand-btn">+</span>
+            </div>
+            <div class="story-card" data-category="gifts">
+                <h3>Meaningful Gestures</h3>
+                <p class="preview">The art of thoughtful giving...</p>
+                <div class="full-story">Emma's collection of meaningful mementos - a seashell from their first beach trip, a concert ticket stub - became cherished symbols of their journey together.</div>
+                <span class="expand-btn">+</span>
+            </div>
+        </div>
+        <div id="story-nav">
+            <button id="prev-story">Previous</button>
+            <button id="next-story">Next</button>
+        </div>
+    </section>
+
+    <!-- New Map Section -->
+    <section id="global-expressions">
+        <h2>Love Around the World</h2>
+        <div id="map-container">
+            <div id="region-markers">
+                <span class="marker" data-region="asia">Asia</span>
+                <span class="marker" data-region="europe">Europe</span>
+                <span class="marker" data-region="americas">Americas</span>
+                <span class="marker" data-region="africa">Africa</span>
+            </div>
+            <div id="region-info">
+                Select a region to learn more about cultural love expressions
+            </div>
+        </div>
+    </section>
+
+    <!-- New Daily Challenge Section -->
+    <section id="daily-challenge">
+        <h2>Today's Love Language Challenge</h2>
+        <div id="challenge-card">
+            <p id="challenge-text">Loading today's challenge...</p>
+            <button id="new-challenge">Get New Challenge</button>
+            <div id="completion-tracker">
+                <span class="day completed">1</span>
+                <span class="day">2</span>
+                <span class="day">3</span>
+                <span class="day">4</span>
+                <span class="day">5</span>
+            </div>
+        </div>
+    </section>
+</div>
+<footer>
+    <p>Share your love language journey</p>
+    <div id="social-share">
+        <button class="share-btn" data-platform="twitter">Twitter</button>
+        <button class="share-btn" data-platform="facebook">Facebook</button>
+        <button class="share-btn" data-platform="instagram">Instagram</button>
+    </div>
+</footer>
+</body>
+<script src="js/script.js"></script>
+</html>
