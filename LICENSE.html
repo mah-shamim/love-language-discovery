@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Language Discovery</title>
+    <style>
+        :root {
+            --primary: #ff758c;
+            --secondary: #ff7eb3;
+            --background: #fff0f5;
+            --text: #333;
+            --white: #fff;
+            --radius: 15px;
+            --shadow: 0 4px 6px rgba(0,0,0,0.1);
+            --transition: all 0.3s ease;
+        }
+
+        /* Optimized Base Styles */
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background: var(--background);
+            line-height: 1.6;
+            color: var(--text);
+        }
+
+        /* Enhanced Accessibility */
+        [role="button"] {
+            cursor: pointer;
+            user-select: none;
+        }
+
+        /* Restructured Hero Section */
+        #hero {
+            padding: 4rem 1rem;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            position: relative;
+            overflow: hidden;
+        }
+
+        .title {
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: var(--white);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Improved Card Grid */
+        .card-grid {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        /* Modern Quiz Component */
+        .quiz-option {
+            position: relative;
+            padding: 1.25rem;
+            border: 2px solid var(--primary);
+            border-radius: var(--radius);
+            background: var(--white);
+            transition: var(--transition);
+        }
+
+        .quiz-option:focus-within {
+            outline: 3px solid var(--primary);
+            outline-offset: 2px;
+        }
+
+        /* Enhanced Chart Accessibility */
+        .bar-container {
+            position: relative;
+        }
+
+        .bar-container [role="progressbar"] {
+            height: 0;
+            background: var(--primary);
+            transition: height 1s ease;
+        }
+
+        /* Mobile-First Media Queries */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        @media (min-width: 768px) {
+            #hero {
+                padding: 6rem 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Enhanced Semantic Structure -->
+<main id="main-content">
+    <section aria-labelledby="main-heading">
+        <h1 id="main-heading" class="title">Discover Your Love Language</h1>
+        <!-- Restructured content -->
+    </section>
+
+    <!-- Improved Accessible Quiz -->
+    <div role="region" aria-live="polite" id="quiz-container">
+        <h2>What's Your Primary Love Language?</h2>
+        <div role="group" aria-labelledby="quiz-question">
+            <!-- Quiz options -->
+        </div>
+    </div>
+
+    <!-- Enhanced Chart with ARIA -->
+    <div class="bar-container">
+        <div role="progressbar"
+             aria-valuenow="75"
+             aria-valuemin="0"
+             aria-valuemax="100"
+             style="height: 75%">
+            <span class="sr-only">Words of Affirmation: 75%</span>
+        </div>
+    </div>
+</main>
+
+<script>
+    // Modern JavaScript Features
+    class LoveLanguageApp {
+        #privateData = new Map();
+
+        constructor() {
+            this.init();
+        }
+
+        init() {
+            this.setupEventListeners();
+            this.loadPolyfills();
+        }
+
+        loadPolyfills() {
+            // Feature detection and polyfill loading
+            if (!('animate' in HTMLElement.prototype)) {
+                import('./polyfills.js');
+            }
+        }
+
+        // Restructured methods
+    }
+
+    // Module Pattern Implementation
+    const AccessibilityManager = (() => {
+        const focusVisibleClass = 'focus-visible';
+
+        return {
+            init() {
+                document.addEventListener('keyup', this.handleKeyNavigation);
+            },
+            handleKeyNavigation(e) {
+                if (e.key === 'Tab') {
+                    document.documentElement.classList.add(focusVisibleClass);
+                }
+            }
+        };
+    })();
+
+    // Initialize Application
+    document.addEventListener('DOMContentLoaded', () => {
+        new LoveLanguageApp();
+        AccessibilityManager.init();
+    });
+</script>
+</body>
+</html>
